@@ -1,0 +1,16 @@
+{
+  "run": [
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "command-to-start-metagpt"
+      }
+    },
+    {
+      "method": "notify",
+      "params": {
+        "message": "MetaGPT started successfully!"
+      }
+    }
+  ]
+}

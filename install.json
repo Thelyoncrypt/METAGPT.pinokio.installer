@@ -1,0 +1,28 @@
+{
+  "run": [
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "python3 -m venv metagpt_venv"
+      }
+    },
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "source metagpt_venv/bin/activate"
+      }
+    },
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "pip install -r requirements.txt"
+      }
+    },
+    {
+      "method": "notify",
+      "params": {
+        "message": "MetaGPT installation completed!"
+      }
+    }
+  ]
+}
