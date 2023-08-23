@@ -1,16 +1,35 @@
 {
   "run": [
     {
+      "method": "shell.start",
+      "params": {
+        "path": "C:\\Users\\DanielFleuren\\pinokio\\api\\METAGPT.pinokio.installer.git"
+      }
+    },
+    {
       "method": "shell.enter",
       "params": {
-        "message": "command-to-start-metagpt"
+        "message": "python3 -m venv metagpt_venv"
+      }
+    },
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "source metagpt_venv/bin/activate"
+      }
+    },
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "pip install -r requirements.txt"
       }
     },
     {
       "method": "notify",
       "params": {
-        "message": "MetaGPT started successfully!"
+        "message": "MetaGPT installation completed!"
       }
     }
   ]
 }
+
