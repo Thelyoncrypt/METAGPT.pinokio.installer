@@ -9,7 +9,7 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "python3 -m venv metagpt_venv"
+        "message": "python -m venv metagpt_venv"
       }
     },
     {
@@ -32,4 +32,5 @@
     }
   ]
 }
+
 
